@@ -89,6 +89,7 @@ Sociopedia is a full-stack dynamic web application designed for multimedia shari
 - **Engage:** Comment on posts to interact with other users.
 - **Themes:** Switch between Light and Dark modes.
 <br/>
+
 ---
 
 
