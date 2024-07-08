@@ -70,7 +70,7 @@ Sociopedia is a full-stack dynamic web application designed for multimedia shari
    - In the first one, navigate to the `server` directory and start the backend server:
      ```bash
      cd server
-     npm start
+     node index.js
      ```
 
    - In the second one, navigate to the `client` directory and start the frontend server:
