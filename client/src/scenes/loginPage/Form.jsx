@@ -62,7 +62,7 @@ const Form = () => {
       formData.append(value, values[value]);
     }
     formData.append("picturePath", values.picture.name);
-
+    console.log(1233333, formData);
     const savedUserResponse = await fetch(
       `${process.env.REACT_APP_BACKEND_URL}/auth/register`,
       {
@@ -87,7 +87,8 @@ const Form = () => {
       body: JSON.stringify(values),
     });
     const loggedIn = await loggedInResponse.json();
-    console.log("loggedIn-90",loggedIn.user.friends);
+    console.log("loggedIn-90",loggedInResponse);
+    console.log(loggedIn);
     onSubmitProps.resetForm();
     if (loggedIn) {
       dispatch(

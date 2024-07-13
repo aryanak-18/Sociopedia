@@ -30,6 +30,7 @@ const MyPostWidget = ({ picturePath }) => {
   const [isImage, setIsImage] = useState(false);
   const [image, setImage] = useState(null);
   const [post, setPost] = useState("");
+  const [description, setDescription] = useState("");
   const { palette } = useTheme();
   const { _id } = useSelector((state) => state.user);
   const token = useSelector((state) => state.token);
@@ -55,6 +56,7 @@ const MyPostWidget = ({ picturePath }) => {
     dispatch(setPosts({ posts }));
     setImage(null);
     setPost("");
+    setDescription("");
   };
 
   return (
@@ -63,7 +65,10 @@ const MyPostWidget = ({ picturePath }) => {
         <UserImage image={picturePath} />
         <InputBase
           placeholder="What's on your mind"
-          onChange={(e) => setPost(e.target.value)}
+          onChange={(e) => {
+            setPost(e.target.value);
+            setDescription(e.target.value);
+          }}
           value={post}
           sx={{
             width: "100%",
@@ -83,7 +88,10 @@ const MyPostWidget = ({ picturePath }) => {
           <Dropzone
             acceptedFiles=".jpg,.jpeg,.png"
             multiple={false}
-            onDrop={(acceptedFiles) => setImage(acceptedFiles[0])}
+            onDrop={(acceptedFiles) => {
+              setImage(acceptedFiles[0]);
+              setPost(description ? description : " ");
+            }}
           >
             {({ getRootProps, getInputProps }) => (
               <FlexBetween>
@@ -159,7 +167,7 @@ const MyPostWidget = ({ picturePath }) => {
           sx={{
             color: palette.background.alt,
             backgroundColor: palette.primary.main,
-            borderRadius: '3rem'
+            borderRadius: "3rem",
           }}
         >
           POST
