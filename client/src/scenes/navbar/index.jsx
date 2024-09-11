@@ -59,7 +59,7 @@ const Navbar = () => {
             },
           }}
         >
-          Sociopedia
+          Threadix
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween

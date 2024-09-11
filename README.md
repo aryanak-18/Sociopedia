@@ -1,6 +1,6 @@
-# Sociopedia
+# Threadix
 
-Sociopedia is a full-stack dynamic web application designed for multimedia sharing and social interaction. Users can create profiles, share content, follow content feeds, and engage in comment threads. The application is built using modern web technologies including ReactJS for the frontend and Express with NodeJS for the backend, along with MongoDB for data storage.
+Threadix is a full-stack dynamic web application designed for multimedia sharing and social interaction. Users can create profiles, share content, follow content feeds, and engage in comment threads. The application is built using modern web technologies including ReactJS for the frontend and Express with NodeJS for the backend, along with MongoDB for data storage.
 
 ## Table of Contents
 
@@ -37,8 +37,8 @@ Sociopedia is a full-stack dynamic web application designed for multimedia shari
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/aryanak-18/Sociopedia.git
-   cd Sociopedia
+   git clone https://github.com/aryanak-18/Threadix.git
+   cd Threadix
    ```
 
 2. **Install dependencies:**
