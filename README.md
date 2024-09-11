@@ -38,7 +38,7 @@ Threadix is a full-stack dynamic web application designed for multimedia sharing
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/aryanak-18/Threadix.git
-   cd Threadix
+   cd ./Threadix
    ```
 
 2. **Install dependencies:**
